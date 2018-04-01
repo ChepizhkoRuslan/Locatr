@@ -207,6 +207,7 @@ public class LocatrFragment extends SupportMapFragment {
 
         @Override
         protected Void doInBackground(Location... params) {
+
             mLocation = params[0];
             FlickrFetchr fetchr = new FlickrFetchr();
             List<GalleryItem> items = fetchr.searchPhotos(params[0]);
